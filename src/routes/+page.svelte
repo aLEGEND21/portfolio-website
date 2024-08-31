@@ -116,7 +116,7 @@
 
 	nav ul li {
 		display: inline;
-		margin-right: 1rem;
+		margin: 0rem 0.5rem;
 	}
 
 	nav ul li a {
