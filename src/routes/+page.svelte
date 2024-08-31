@@ -208,11 +208,15 @@
 		padding: 1.5rem;
 		border: 2px solid gainsboro;
 		border-radius: 15px;
+		transition: transform 0.2s ease, box-shadow 0.2s;
 	}
 
 	.project:hover {
 		background-color: rgba(255, 255, 255, 0.05);
+		transform: translateY(-10px);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 	}
+
 	.project-name {
 		font-size: 2rem;
 		color: #fff;
@@ -242,7 +246,7 @@
 
 		/* Hero section styles */
 		.hero {
-			margin: -10rem 0 1rem;
+			margin: -10rem 1rem 0;
 		}
 		.hero-heading {
 			font-size: 3rem;
