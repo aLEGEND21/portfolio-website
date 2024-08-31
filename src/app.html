@@ -5,6 +5,35 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
+
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			:root {
+				/* Colors */
+				--color-blue: rgb(13, 110, 253);
+				--color-green: rgb(45, 254, 84);
+
+				/* Fonts */
+				font-family: 'Montserrat', sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+			}
+
+			body {
+				background: linear-gradient(90deg, rgba(48, 16, 255, 1) 0%, rgba(100, 115, 255, 1) 100%);
+			}
+
+			a {
+				color: gainsboro;
+			}
+		</style>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
