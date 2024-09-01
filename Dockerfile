@@ -16,8 +16,9 @@ RUN npm run build
 # Expose the port
 EXPOSE 3001
 
-# Set the environment to production
+# Set the environment variables
 ENV NODE_ENV=production
+ENV PORT=3001
 
 # Run the app
-CMD ["node", ".svelte-kit/output/server/index.js"]
+CMD ["node", "build"]
