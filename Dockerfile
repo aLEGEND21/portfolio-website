@@ -16,12 +16,9 @@ RUN npm run build
 # Expose the port
 EXPOSE 3001
 
-# Load the environment variables from the .env file
-RUN node -r dotenv/config build
-
 # Set the production-specific environment variables
 ENV NODE_ENV=production
 ENV PORT=3001
 
-# Run the app
-CMD ["node", "build"]
+# Run the app and use the dotenv package to load the environment variables
+CMD ["node", "-r", "dotenv/config", "build"]
