@@ -32,10 +32,19 @@
 				--color-blue: rgb(13, 110, 253);
 				--color-green: rgb(45, 254, 84);
 
+				/* Other variables */
+				--font-family: 'Montserrat', sans-serif; /* Use a variable so it can be used in components it doesn't apply to */
+
 				/* Fonts */
-				font-family: 'Montserrat', sans-serif;
+				font-family: var(--font-family);
 				font-optical-sizing: auto;
 				font-style: normal;
+			}
+
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
 			}
 
 			body {

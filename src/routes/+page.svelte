@@ -52,12 +52,17 @@
 			<li><a href="/#home" on:click={() => scrollTop()}>Home</a></li>
 			<li><a href="/#about" use:scrollTo={'about'}>About</a></li>
 			<li><a href="/#projects" use:scrollTo={'projects'}>Projects</a></li>
+			<li><a href="/#contact" use:scrollTo={'contact'}>Contact</a></li>
 		</ul>
 	</nav>
 
 	<div class="hero">
 		<h1 class="hero-heading">Hi, I'm Arnav</h1>
-		<h3 class="hero-subheading">I'm a <span class="hero-autotype">{visibleText}</span><span class="hero-autotype-cursor">|</span></h3>
+		<h3 class="hero-subheading">
+			I'm a <span class="hero-autotype">{visibleText}</span><span class="hero-autotype-cursor"
+				>|</span
+			>
+		</h3>
 		<div class="hero-button-container">
 			<a href="/#about" class="hero-button" use:scrollTo={'about'}>View My Work</a>
 		</div>
@@ -84,6 +89,40 @@
 				</a>
 			{/each}
 		</div>
+	</section>
+	<section id="contact" use:scrollRef={'contact'}>
+		<h2 class="section-heading">Contact</h2>
+		<form method="POST" id="contact-form">
+			<div class="form-row">
+				<div class="form-group">
+					<label for="name" class="form-label">Name</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						class="form-input"
+						autocomplete="off"
+						placeholder="John Doe"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<label for="email" class="form-label">Email</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						class="form-input"
+						autocomplete="off"
+						placeholder="johndoe@example.com"
+						required
+					/>
+				</div>
+			</div>
+			<label for="message" class="form-label">Message</label>
+			<textarea id="message" name="message" placeholder="Type a message here" required />
+			<button type="submit" id="contact-submit">Send Message</button>
+		</form>
 	</section>
 </div>
 
@@ -243,6 +282,98 @@
 		align-self: end;
 	}
 
+	/* Contact section styles */
+
+	#contact-form {
+		margin: 1rem 0;
+		text-align: left;
+	}
+
+	.form-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* Ensure columns take equal space */
+		column-gap: 2rem; /* Add a 2rem gap between columns */
+		width: 100%;
+		margin: 0.5rem 0;
+	}
+
+	.form-group {
+		display: grid;
+		grid-template-rows: auto auto; /* Ensure label and input stack vertically */
+		width: 100%; /* Ensure form group takes full width of its container */
+	}
+
+	.form-label {
+		color: gainsboro;
+		font-size: 1rem;
+		padding-left: 1rem;
+	}
+
+	.form-input {
+		padding: 0.75rem 1rem;
+		margin: 0.5rem 0;
+		border: 2px solid gainsboro;
+		border-radius: 10px;
+		background-color: rgba(255, 255, 255, 0.05);
+		color: gainsboro;
+		font-size: 1.1rem;
+		width: 100%;
+	}
+
+	.form-input:active,
+	.form-input:focus {
+		outline: none;
+		border-color: var(--color-green);
+	}
+
+	.form-input::placeholder {
+		color: #9f9f9f;
+		font-family: var(--font-family);
+	}
+
+	#message {
+		padding: 0.75rem 1rem;
+		margin: 0.5rem 0;
+		border: 2px solid gainsboro;
+		border-radius: 10px;
+		background-color: rgba(255, 255, 255, 0.05);
+		color: gainsboro;
+		font-size: 1.1rem;
+		width: 100%; /* Ensure textarea takes full width of its container */
+		min-height: 10rem; /* min-height to prevent resizing below it */
+		resize: vertical;
+		font-family: var(--font-family);
+	}
+
+	#message:active,
+	#message:focus {
+		outline: none;
+		border-color: var(--color-green);
+	}
+
+	#message::placeholder {
+		color: #9f9f9f;
+	}
+
+	#contact-submit {
+		margin-top: 0.5rem;
+		padding: 0.75rem 1rem;
+		border: 2px solid gainsboro;
+		border-radius: 10px;
+		background-color: transparent;
+		color: gainsboro;
+		font-size: 1rem;
+		cursor: pointer;
+		font-family: var(--font-family);
+		display: block; /* Make the button a block element */
+		margin-left: auto; /* Center horizontally */
+		margin-right: auto; /* Center horizontally */
+	}
+
+	#contact-submit:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+
 	/* Media queries */
 	@media (max-width: 768px) {
 		/* Main content styles */
@@ -269,15 +400,28 @@
 		.project-container {
 			grid-template-columns: 1fr;
 		}
+
+		/* Contact section styles */
+
+		.form-row {
+			grid-template-columns: 1fr; /* Ensure form groups take full width */
+		}
+
+		.form-group {
+			margin-top: 0.5rem;
+		}
 	}
 
 	/* Keyframes for blinking cursor */
 	@keyframes blink {
-        0%, 50%, 100% {
-            opacity: 1;
-        }
-        25%, 75% {
-            opacity: 0;
-        }
-    }
+		0%,
+		50%,
+		100% {
+			opacity: 1;
+		}
+		25%,
+		75% {
+			opacity: 0;
+		}
+	}
 </style>
