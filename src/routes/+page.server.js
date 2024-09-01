@@ -1,4 +1,4 @@
-import { WEBHOOK_URL } from '$env/dynamic/private';
+import { WEBHOOK_URL } from '$env/static/private';
 
 export const actions = {
 	// Handle the POST request for the contact form
