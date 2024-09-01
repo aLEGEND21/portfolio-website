@@ -10,6 +10,9 @@ RUN npm install
 # Copy over the rest of the files
 COPY . .
 
+# TEMP
+ENV WEBHOOK_URL=abc123
+
 # Build the app
 RUN npm run build
 
