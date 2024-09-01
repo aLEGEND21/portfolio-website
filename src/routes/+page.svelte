@@ -4,7 +4,7 @@
 
 	// Settings for auto-typing
 	let visibleText = '';
-	let phrases = ['Software Developer', 'Student', 'Freelancer Programmer', 'Tech Enthusiast'];
+	let phrases = ['Software Developer', 'Student', 'Freelance Programmer', 'Tech Enthusiast'];
 	let phraseIndex = 0;
 	let phrase = phrases[phraseIndex];
 	let charIndex = 0;
