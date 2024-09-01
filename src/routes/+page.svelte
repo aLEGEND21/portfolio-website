@@ -31,7 +31,7 @@
 				if (visibleText.length > 0) {
 					visibleText = visibleText.slice(0, -1);
 				} else {
-					pendingDelay = 500;
+					pendingDelay = 1500;
 					typing = true;
 					phraseIndex = (phraseIndex + 1) % phrases.length;
 					phrase = phrases[phraseIndex];
@@ -57,7 +57,7 @@
 
 	<div class="hero">
 		<h1 class="hero-heading">Hi, I'm Arnav</h1>
-		<h3 class="hero-subheading">I'm a <span class="hero-autotype">{visibleText}</span></h3>
+		<h3 class="hero-subheading">I'm a <span class="hero-autotype">{visibleText}</span><span class="hero-autotype-cursor">|</span></h3>
 		<div class="hero-button-container">
 			<a href="/#about" class="hero-button" use:scrollTo={'about'}>View My Work</a>
 		</div>
@@ -146,6 +146,10 @@
 	.hero-autotype {
 		color: var(--color-green);
 		font-weight: 600;
+	}
+
+	.hero-autotype-cursor {
+		animation: blink 2s infinite;
 	}
 
 	.hero-button-container {
@@ -266,4 +270,14 @@
 			grid-template-columns: 1fr;
 		}
 	}
+
+	/* Keyframes for blinking cursor */
+	@keyframes blink {
+        0%, 50%, 100% {
+            opacity: 1;
+        }
+        25%, 75% {
+            opacity: 0;
+        }
+    }
 </style>
