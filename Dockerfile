@@ -6,7 +6,6 @@ COPY package-lock.json .
 
 # Install the packages
 RUN npm install
-RUN npm install -g serve
 
 # Copy over the rest of the files
 COPY . .
@@ -21,4 +20,4 @@ EXPOSE 3001
 ENV NODE_ENV=production
 
 # Run the app
-CMD ["node", "build"]
+CMD ["node", "svelte-kit/output/server/index.js"]
