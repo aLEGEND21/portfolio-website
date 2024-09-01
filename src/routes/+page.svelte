@@ -59,11 +59,11 @@
 
 	<div class="hero">
 		<h1 class="hero-heading">Hi, I'm Arnav</h1>
-		<h3 class="hero-subheading">
+		<h2 class="hero-subheading">
 			I'm a <span class="hero-autotype">{visibleText}</span><span class="hero-autotype-cursor"
 				>|</span
 			>
-		</h3>
+		</h2>
 		<div class="hero-button-container">
 			<a href="/#about" class="hero-button" use:scrollTo={'about'}>View My Work</a>
 		</div>
@@ -72,15 +72,15 @@
 
 <div class="contents">
 	<section id="about" use:scrollRef={'about'}>
-		<h2 class="section-heading">About Me</h2>
-		<h6 class="about-me">
+		<h3 class="section-heading">About Me</h3>
+		<p class="about-me">
 			I'm a full-stack developer with a passion for building web applications. In addition to being
 			the founder and lead developer at ProfitGreen, I'm a freelance software developer. In my free
 			time, I enjoy playing Valorant, reading books, and practicing the piano.
-		</h6>
+		</p>
 	</section>
 	<section id="projects" use:scrollRef={'projects'}>
-		<h2 class="section-heading">Projects</h2>
+		<h3 class="section-heading">Projects</h3>
 		<div class="project-container">
 			{#each data.projects as project}
 				<a href={project.url} target="_blank" class="project">
@@ -92,7 +92,7 @@
 		</div>
 	</section>
 	<section id="contact" use:scrollRef={'contact'}>
-		<h2 class="section-heading">Contact</h2>
+		<h3 class="section-heading">Contact</h3>
 		<form method="POST" id="contact-form" use:enhance>
 			<div class="form-row">
 				<div class="form-group">
