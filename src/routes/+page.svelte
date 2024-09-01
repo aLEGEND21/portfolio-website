@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
+	import { enhance } from '$app/forms';
 
 	// Settings for auto-typing
 	let visibleText = '';
@@ -92,7 +93,7 @@
 	</section>
 	<section id="contact" use:scrollRef={'contact'}>
 		<h2 class="section-heading">Contact</h2>
-		<form method="POST" id="contact-form">
+		<form method="POST" id="contact-form" use:enhance>
 			<div class="form-row">
 				<div class="form-group">
 					<label for="name" class="form-label">Name</label>
