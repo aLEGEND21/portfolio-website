@@ -208,7 +208,9 @@
 		padding: 1.5rem;
 		border: 2px solid gainsboro;
 		border-radius: 15px;
-		transition: transform 0.2s ease, box-shadow 0.2s;
+		transition:
+			transform 0.2s ease,
+			box-shadow 0.2s;
 	}
 
 	.project:hover {
