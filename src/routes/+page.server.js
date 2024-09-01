@@ -1,4 +1,4 @@
-import { WEBHOOK_URL } from '$env/static/private';
+import { VITE_WEBHOOK_URL as WEBHOOK_URL } from '$env/static/private';
 
 export const actions = {
 	// Handle the POST request for the contact form
