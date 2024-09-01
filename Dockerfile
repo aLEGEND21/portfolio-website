@@ -20,4 +20,4 @@ EXPOSE 3001
 ENV NODE_ENV=production
 
 # Run the app
-CMD ["node", "svelte-kit/output/server/index.js"]
+CMD ["node", ".svelte-kit/output/server/index.js"]
