@@ -1,6 +1,6 @@
-import profitgreenImage from '$lib/assets/profitgreen.png';
-import cleetiverseImage from '$lib/assets/cleetiverse.png';
-import hirespaceImage from '$lib/assets/hirespace.png';
+import profitgreenImage from '$lib/assets/profitgreen.webp';
+import cleetiverseImage from '$lib/assets/cleetiverse.webp';
+import hirespaceImage from '$lib/assets/hirespace.webp';
 import chatappImage from '$lib/assets/chatapp.webp';
 
 export function load() {
