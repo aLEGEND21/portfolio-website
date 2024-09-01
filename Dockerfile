@@ -10,11 +10,8 @@ RUN npm install
 # Copy over the rest of the files
 COPY . .
 
-# Load the .env file
-RUN cp .env .env.production
-
 # Build the app
-RUN npm run build
+#RUN npm run build
 
 # Expose the port
 EXPOSE 3001
