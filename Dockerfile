@@ -10,8 +10,8 @@ RUN npm install
 # Copy over the rest of the files
 COPY . .
 
-# TEMP
-ENV WEBHOOK_URL=abc123
+# Load the .env file
+RUN cp .env .env.production
 
 # Build the app
 RUN npm run build
