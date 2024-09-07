@@ -3,6 +3,7 @@ import cleetiverseImage from '$lib/assets/cleetiverse.webp';
 import hirespaceImage from '$lib/assets/hirespace.webp';
 import chatappImage from '$lib/assets/chatapp.webp';
 import disthreadImage from '$lib/assets/disthread.webp';
+import portfolioImage from '$lib/assets/portfolio.webp';
 
 export function load() {
 	let projects = [
@@ -45,6 +46,14 @@ export function load() {
 				"A social media app that integrates Meta Threads into Discord, automatically streaming posts from users' favorite Threads accounts into their Discord servers.",
 			image: disthreadImage,
 			url: 'https://disthread.greenapp.live'
+		},
+		{
+			id: 'portfolio',
+			name: 'This Website',
+			description:
+				'The website you are currently viewing. A personal developer portfolio showcasing my projects and skills.',
+			image: portfolioImage,
+			url: 'https://github.com/aLEGEND21/portfolio-website'
 		}
 	];
 
