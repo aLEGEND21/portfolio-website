@@ -2,6 +2,7 @@ import profitgreenImage from '$lib/assets/profitgreen.webp';
 import cleetiverseImage from '$lib/assets/cleetiverse.webp';
 import hirespaceImage from '$lib/assets/hirespace.webp';
 import chatappImage from '$lib/assets/chatapp.webp';
+import disthreadImage from '$lib/assets/disthread.webp';
 
 export function load() {
 	let projects = [
@@ -36,6 +37,14 @@ export function load() {
 				'A real-time chat application with infinite chat rooms allowing users to communicate with anyone, anywhere around the world.',
 			image: chatappImage,
 			url: 'https://chat.greenapp.live'
+		},
+		{
+			id: 'disthread',
+			name: 'Disthread',
+			description:
+				'A social media app that integrates Meta Threads into Discord, automatically streaming posts from your favorite Threads users into your Discord server.',
+			image: disthreadImage,
+			url: 'https://disthread.greenapp.live'
 		}
 	];
 

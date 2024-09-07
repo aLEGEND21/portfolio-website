@@ -281,6 +281,7 @@
 		margin-top: 1rem;
 		border-radius: 10px;
 		align-self: end;
+		border: 2px solid gainsboro;
 	}
 
 	/* Contact section styles */
