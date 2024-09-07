@@ -42,7 +42,7 @@ export function load() {
 			id: 'disthread',
 			name: 'Disthread',
 			description:
-				'A social media app that integrates Meta Threads into Discord, automatically streaming posts from your favorite Threads users into your Discord server.',
+				"A social media app that integrates Meta Threads into Discord, automatically streaming posts from users' favorite Threads accounts into their Discord servers.",
 			image: disthreadImage,
 			url: 'https://disthread.greenapp.live'
 		}
