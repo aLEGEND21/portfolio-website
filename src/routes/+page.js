@@ -29,7 +29,7 @@ export function load() {
 			description:
 				'A platform for high school students to easily find and apply to internships. Built for the Summer Research & Innovation Program at the North Carolina School of Science and Mathematics.',
 			image: hirespaceImage,
-			url: 'https://github.com/aLEGEND21/HS-Internship-Finder'
+			url: 'https://hirespace.greenapp.live'
 		},
 		{
 			id: 'chatapp',
