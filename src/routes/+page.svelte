@@ -81,9 +81,9 @@
 			</p>
 			<div class="about-icons">
 				{#each data.icons as icon}
-					<div class="about-icon">
+					<a class="about-icon" href={icon.href} target="_blank">
 						<img src={icon.src} alt={icon.alt} />
-					</div>	
+					</a>	
 				{/each}
 			</div>
 		</div>
@@ -261,10 +261,18 @@
 	}
 
 	.about-icon {
-		background-color: rgba(255, 255, 255, 0.05);
 		border-radius: 15px;
 		border: 2px solid gainsboro;
 		padding: 0.5rem;
+		transition:
+			transform 0.2s ease,
+			box-shadow 0.2s;
+	}
+
+	.about-icon:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+		transform: translateY(-5px);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 	}
 
 	.about-icon img {
