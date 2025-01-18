@@ -4,6 +4,18 @@ import hirespaceImage from '$lib/assets/hirespace.webp';
 import chatappImage from '$lib/assets/chatapp.webp';
 import disthreadImage from '$lib/assets/disthread.webp';
 import portfolioImage from '$lib/assets/portfolio.webp';
+import reactIcon from '$lib/assets/react.webp';
+import pythonIcon from '$lib/assets/python.webp';
+import typescriptIcon from '$lib/assets/typescript.webp';
+import csharpIcon from '$lib/assets/csharp.webp';
+import javaIcon from '$lib/assets/java.webp';
+import htmlIcon from '$lib/assets/html.webp';
+import cssIcon from '$lib/assets/css.webp';
+import dockerIcon from '$lib/assets/docker.webp';
+import mongodbIcon from '$lib/assets/mongodb.webp';
+import cppIcon from '$lib/assets/cpp.webp';
+import flaskIcon from '$lib/assets/flask.webp';
+import svelteIcon from '$lib/assets/svelte.webp';
 
 export function load() {
 	let projects = [
@@ -57,5 +69,20 @@ export function load() {
 		}
 	];
 
-	return { projects };
+	let icons = [
+		{ alt: 'react', src: reactIcon },
+		{ alt: 'python', src: pythonIcon },
+		{ alt: 'typescript', src: typescriptIcon },
+		{ alt: 'csharp', src: csharpIcon },
+		{ alt: 'java', src: javaIcon },
+		{ alt: 'html', src: htmlIcon },
+		{ alt: 'css', src: cssIcon },
+		{ alt: 'docker', src: dockerIcon },
+		{ alt: 'mongodb', src: mongodbIcon },
+		{ alt: 'cpp', src: cppIcon },
+		{ alt: 'flask', src: flaskIcon },
+		{ alt: 'svelte', src: svelteIcon }
+	];
+
+	return { projects, icons };
 }

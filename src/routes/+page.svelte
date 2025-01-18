@@ -73,11 +73,20 @@
 <div class="contents">
 	<section id="about" use:scrollRef={'about'}>
 		<h3 class="section-heading">About Me</h3>
-		<p class="about-me">
-			I'm a full-stack developer with a passion for building web applications. In addition to being
-			the founder and lead developer at ProfitGreen, I'm a freelance software developer. In my free
-			time, I enjoy playing Valorant, reading books, and practicing the piano.
-		</p>
+		<div class="about-content">	
+			<p class="about-me">
+				I'm a full-stack developer with a passion for building web applications. In addition to being
+				the founder and lead programmer at ProfitGreen, I'm a freelance software developer. Feel free 
+				to check out my favorite technologies!
+			</p>
+			<div class="about-icons">
+				{#each data.icons as icon}
+					<div class="about-icon">
+						<img src={icon.src} alt={icon.alt} />
+					</div>	
+				{/each}
+			</div>
+		</div>
 	</section>
 	<section id="projects" use:scrollRef={'projects'}>
 		<h3 class="section-heading">Projects</h3>
@@ -228,12 +237,40 @@
 
 	/* About section styles */
 
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+		margin-top: 1rem;
+	}
+
 	.about-me {
 		margin: 0;
 		font-size: 1.5rem;
 		color: gainsboro;
 		line-height: 1.5;
 		font-weight: 400;
+	}
+
+	.about-icons {
+		display: grid;
+		grid-auto-rows: max-content;
+		grid-template-columns: repeat(6, 1fr);
+		column-gap: .75rem;
+		row-gap: .75rem;
+	}
+
+	.about-icon {
+		background-color: rgba(255, 255, 255, 0.05);
+		border-radius: 15px;
+		border: 2px solid gainsboro;
+		padding: 0.5rem;
+	}
+
+	.about-icon img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 
 	/* Projects section styles */
