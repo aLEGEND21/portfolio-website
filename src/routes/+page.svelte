@@ -435,6 +435,16 @@
 			padding: 0.75rem 1.5rem;
 		}
 
+		/* About section styles */
+		.about-content {
+			grid-template-columns: 1fr; /* Ensure content stacks vertically */
+		}
+
+		.about-icons {
+			margin-top: 2rem;
+			grid-template-columns: repeat(4, 1fr);
+		}
+
 		/* Projects section styles */
 		.project-container {
 			grid-template-columns: 1fr;
