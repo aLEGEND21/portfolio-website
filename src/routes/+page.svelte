@@ -440,6 +440,10 @@
 			grid-template-columns: 1fr; /* Ensure content stacks vertically */
 		}
 
+		.about-me {
+			font-size: 1.25rem;
+		}
+
 		.about-icons {
 			margin-top: 2rem;
 			grid-template-columns: repeat(4, 1fr);
