@@ -12,10 +12,10 @@ import javaIcon from '$lib/assets/icons/java.webp';
 import flaskIcon from '$lib/assets/icons/flask.webp';
 import svelteIcon from '$lib/assets/icons/svelte.webp';
 import reactIcon from '$lib/assets/icons/react.webp';
+import nextIcon from '$lib/assets/icons/next.webp';
 import dockerIcon from '$lib/assets/icons/docker.webp';
 import mongodbIcon from '$lib/assets/icons/mongodb.webp';
-import htmlIcon from '$lib/assets/icons/html.webp';
-import cssIcon from '$lib/assets/icons/css.webp';
+import unityIcon from '$lib/assets/icons/unity.webp';
 
 export function load() {
 	let projects = [
@@ -78,10 +78,10 @@ export function load() {
 		{ alt: 'Flask Logo', src: flaskIcon, href: 'https://flask.palletsprojects.com/' },
 		{ alt: 'Svelte Logo', src: svelteIcon, href: 'https://svelte.dev/' },
 		{ alt: 'React Logo', src: reactIcon, href: 'https://react.dev/' },
+		{ alt: 'Next.js Logo', src: nextIcon, href: 'https://nextjs.org/' },
 		{ alt: 'Docker Logo', src: dockerIcon, href: 'https://www.docker.com/' },
 		{ alt: 'MongoDB Logo', src: mongodbIcon, href: 'https://www.mongodb.com/' },
-		{ alt: 'HTML Logo', src: htmlIcon, href: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-		{ alt: 'CSS Logo', src: cssIcon, href: 'https://developer.mozilla.org/en-US/docs/Web/CSS' }
+		{ alt: 'Unity Logo', src: unityIcon, href: 'https://unity.com/' }
 	];
 
 	return { projects, icons };
