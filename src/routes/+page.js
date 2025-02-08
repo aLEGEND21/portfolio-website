@@ -25,7 +25,7 @@ export function load() {
 			description:
 				'An investing app that directly integrates financial data for thousands of stocks and cryptocurrencies directly into Discord.',
 			image: profitgreenImage,
-			url: 'https://profit.greenapp.live'
+			url: 'https://profit.greenapp.tech'
 		},
 		{
 			id: 'cleetiverse',
@@ -41,7 +41,7 @@ export function load() {
 			description:
 				'A platform for high school students to easily find and apply to internships. Built for the Summer Research & Innovation Program at the North Carolina School of Science and Mathematics.',
 			image: hirespaceImage,
-			url: 'https://hirespace.greenapp.live'
+			url: 'https://hirespace.greenapp.tech'
 		},
 		{
 			id: 'chatapp',
@@ -49,7 +49,7 @@ export function load() {
 			description:
 				'A real-time chat application with infinite chat rooms allowing users to communicate with anyone, anywhere around the world.',
 			image: chatappImage,
-			url: 'https://chat.greenapp.live'
+			url: 'https://chat.greenapp.tech'
 		},
 		{
 			id: 'disthread',
@@ -57,7 +57,7 @@ export function load() {
 			description:
 				"A social media app that integrates Meta Threads into Discord, automatically streaming posts from users' favorite Threads accounts into their Discord servers.",
 			image: disthreadImage,
-			url: 'https://disthread.greenapp.live'
+			url: 'https://disthread.greenapp.tech'
 		},
 		{
 			id: 'portfolio',
