@@ -1,9 +1,14 @@
+// Project image imports
 import profitgreenImage from '$lib/assets/projects/profitgreen.webp';
 import cleetiverseImage from '$lib/assets/projects/cleetiverse.webp';
 import hirespaceImage from '$lib/assets/projects/hirespace.webp';
 import chatappImage from '$lib/assets/projects/chatapp.webp';
 import disthreadImage from '$lib/assets/projects/disthread.webp';
 import portfolioImage from '$lib/assets/projects/portfolio.webp';
+import screenlinkImage from '$lib/assets/projects/screenlink.webp';
+import brainrotlangImage from '$lib/assets/projects/brainrotlang.webp';
+
+// Skill icon imports
 import pythonIcon from '$lib/assets/icons/python.webp';
 import typescriptIcon from '$lib/assets/icons/typescript.webp';
 import csharpIcon from '$lib/assets/icons/csharp.webp';
@@ -23,7 +28,7 @@ export function load() {
 			id: 'profitgreen',
 			name: 'ProfitGreen',
 			description:
-				'An investing app that directly integrates financial data for thousands of stocks and cryptocurrencies directly into Discord.',
+				'An investing app with over 5,000 users that provides real-time financial data for thousands of stocks and cryptos, all within Discord.',
 			image: profitgreenImage,
 			url: 'https://profit.greenapp.tech'
 		},
@@ -66,6 +71,22 @@ export function load() {
 				'The website you are currently viewing. A personal developer portfolio showcasing my projects and skills.',
 			image: portfolioImage,
 			url: 'https://github.com/aLEGEND21/portfolio-website'
+		},
+		{
+			id: 'screenlink',
+			name: 'ScreenLink',
+			description:
+				'A modern, zero-install screen sharing platform built with Next.js. Users can share their screens with peers instantly using just a link or code.',
+			image: screenlinkImage,
+			url: 'https://github.com/aLEGEND21/screenlink'
+		},
+		{
+			id: 'brainrotlang',
+			name: 'Brainrot Lang',
+			description:
+				'An online editor for a custom programming language based on brainrot (internet slang).',
+			image: brainrotlangImage,
+			url: 'https://brainrot.greenapp.tech'
 		}
 	];
 
