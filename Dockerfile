@@ -14,11 +14,11 @@ COPY . .
 RUN npm run build
 
 # Expose the port
-EXPOSE 3001
+EXPOSE 2000
 
 # Set the production-specific environment variables
 ENV NODE_ENV=production
-ENV PORT=3001
+ENV PORT=2000
 
 # Run the app and use the dotenv package to load the environment variables
 CMD ["node", "-r", "dotenv/config", "build"]

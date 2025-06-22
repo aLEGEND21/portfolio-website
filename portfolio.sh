@@ -7,4 +7,4 @@ mv .env portfolio-website/.env
 cd portfolio-website
 sudo docker build -t portfolio-website .
 sudo docker rm -f portfolio-website
-sudo docker run -d --name portfolio-website -p 3001:3001 --network=nginx-proxy portfolio-website
+sudo docker run -d --name portfolio-website -p 2000:2000 --network=nginx-proxy portfolio-website
