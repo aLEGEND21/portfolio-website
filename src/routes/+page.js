@@ -4,9 +4,11 @@ import cleetiverseImage from '$lib/assets/projects/cleetiverse.webp';
 import hirespaceImage from '$lib/assets/projects/hirespace.webp';
 import chatappImage from '$lib/assets/projects/chatapp.webp';
 import disthreadImage from '$lib/assets/projects/disthread.webp';
-import portfolioImage from '$lib/assets/projects/portfolio.webp';
 import screenlinkImage from '$lib/assets/projects/screenlink.webp';
 import brainrotlangImage from '$lib/assets/projects/brainrotlang.webp';
+import publiusImage from '$lib/assets/projects/publius.webp';
+import sprinklImage from '$lib/assets/projects/sprinkl.webp';
+import foodhubImage from '$lib/assets/projects/foodhub.webp';
 
 // Skill icon imports
 import pythonIcon from '$lib/assets/icons/python.webp';
@@ -65,14 +67,6 @@ export function load() {
 			url: 'https://disthread.greenapp.tech'
 		},
 		{
-			id: 'portfolio',
-			name: 'This Website',
-			description:
-				'The website you are currently viewing. A personal developer portfolio showcasing my projects and skills.',
-			image: portfolioImage,
-			url: 'https://github.com/aLEGEND21/portfolio-website'
-		},
-		{
 			id: 'screenlink',
 			name: 'ScreenLink',
 			description:
@@ -87,6 +81,30 @@ export function load() {
 				'An online editor for a custom programming language based on brainrot (internet slang).',
 			image: brainrotlangImage,
 			url: 'https://brainrot.greenapp.tech'
+		},
+		{
+			id: 'publius',
+			name: 'Publius',
+			description:
+				'An open-source browser-based image rating app. It uses an Elo-rating system to properly rank large numbers of images based on user input, through 1v1 matchups.',
+			image: publiusImage,
+			url: 'https://github.com/aLEGEND21/publius'
+		},
+		{
+			id: 'sprinkl',
+			name: 'Sprinkl',
+			description:
+				'A modern, full-stack web application for discovering, searching, and saving recipes, powered by AI-driven personalized recommendations and Google OAuth authentication.',
+			image: sprinklImage,
+			url: 'https://github.com/aLEGEND21/Sprinkl'
+		},
+		{
+			id: 'foodhub',
+			name: 'FoodHub',
+			description:
+				'A modern food tracking application that helps you monitor your daily nutrition intake, track habits, and maintain a healthy lifestyle. Built with Next.js and MongoDB.',
+			image: foodhubImage,
+			url: 'https://github.com/aLEGEND21/FoodHub'
 		}
 	];
 
