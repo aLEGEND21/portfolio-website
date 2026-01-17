@@ -30,9 +30,9 @@ export function load() {
 			id: 'profitgreen',
 			name: 'ProfitGreen',
 			description:
-				'An investing app with over 5,000 users that provides real-time financial data for thousands of stocks and cryptos, all within Discord.',
+				'An investing app with over 6,500 users that provides real-time financial data for thousands of stocks and cryptos, all within Discord.',
 			image: profitgreenImage,
-			url: 'https://profit.greenapp.tech'
+			url: 'https://profitgreen.app'
 		},
 		{
 			id: 'cleetiverse',
@@ -48,7 +48,7 @@ export function load() {
 			description:
 				'A platform for high school students to easily find and apply to internships. Built for the Summer Research & Innovation Program at the North Carolina School of Science and Mathematics.',
 			image: hirespaceImage,
-			url: 'https://hirespace.greenapp.tech'
+			url: 'https://hirespace.arnavm.com'
 		},
 		{
 			id: 'chatapp',
@@ -56,15 +56,15 @@ export function load() {
 			description:
 				'A real-time chat application with infinite chat rooms allowing users to communicate with anyone, anywhere around the world.',
 			image: chatappImage,
-			url: 'https://chat.greenapp.tech'
+			url: 'https://chat.arnavm.com'
 		},
 		{
 			id: 'disthread',
 			name: 'Disthread',
 			description:
-				"A social media app that integrates Meta Threads into Discord, automatically streaming posts from users' favorite Threads accounts into their Discord servers.",
+				"A social media app used by over 600 users that integrates Threads into Discord, automatically streaming posts from users' favorite Threads accounts into their Discord servers. Achieved rapid growth, reaching 500 users in 1 month.",
 			image: disthreadImage,
-			url: 'https://disthread.greenapp.tech'
+			url: 'https://disthread.arnavm.com'
 		},
 		{
 			id: 'screenlink',
@@ -80,7 +80,7 @@ export function load() {
 			description:
 				'An online editor for a custom programming language based on brainrot (internet slang).',
 			image: brainrotlangImage,
-			url: 'https://brainrot.greenapp.tech'
+			url: 'https://brainrot.arnavm.com'
 		},
 		{
 			id: 'publius',

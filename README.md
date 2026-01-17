@@ -1,6 +1,6 @@
 # portfolio-website
 
-This website was created to serve as my developer portfolio, which can be viewed at [https://greenapp.tech](https://greenapp.tech). It was created with SvelteKit and deployed using Docker and Nginx. The website is hosted on a Contabo VPS.
+This website was created to serve as my developer portfolio, which can be viewed at [https://arnavm.com](https://arnavm.com). It was created with SvelteKit and deployed using Docker and Nginx. The website is hosted on a Contabo VPS.
 
 ## Installation and Usage
 
@@ -39,4 +39,4 @@ bash portfolio.sh
 
 ## License
 
-This project is not available for reuse. If you have any questions, please contact me using the form on my [website](https://greenapp.tech/#contact).
+This project is not available for reuse. If you have any questions, please contact me using the form on my [website](https://arnavm.com/#contact).
